@@ -15,15 +15,15 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{ asset('asset_user/css/bootstrap.min.css')}}">
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{{ asset('asset_user/css/style.css')}}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{{ asset('asset_user/css/responsive.css')}}">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{{ asset('asset_user/images/fevicon.png')}}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{{ asset('asset_user/css/jquery.mCustomScrollbar.min.css')}}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -35,7 +35,7 @@
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="{{ asset('asset_user/images/loading.gif')}}" alt="#" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -48,7 +48,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="{{ asset('asset_user/images/logo.png')}}" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -61,20 +61,18 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                 <a class="nav-link" href="index.html"> Home  </a>
+                                 <a class="nav-link" href="index"> Home  </a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">Tentang Kami</a>
+                                 <a class="nav-link" href="/about">Tentang Kami</a>
                               </li>
+                    
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Contact us</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="car.html">Car</a>
+                                 <a class="nav-link" href="/car">Car</a>
                               </li>
                            </ul>
-                           <div class="sign_btn"><a href="#">Login</a></div>
-                           <div class="sign_btn"><a href="#">Logout</a></div>
+                           <div class="sign_btn"><a href="/login">Login</a></div>
+                           <div class="sign_btn"><a href="/logout">Logout</a></div>
                         </div>
                      </nav>
                   </div>
@@ -110,7 +108,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="about-img">
-                        <img src="images/tentangkami.jpg" alt="Tentang Kami" class="img-fluid">
+                        <img src="{{ asset('asset_user/images/tentangkami.jpg')}}" alt="Tentang Kami" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -317,15 +315,15 @@
      
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="{{ asset('asset_user/js/jquery.min.js')}}"></script>
+      <script src="{{ asset('asset_user/js/popper.min.js')}}"></script>
+      <script src="{{ asset('asset_user/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{ asset('asset_user/js/jquery-3.0.0.min.js')}}"></script>
+      <script src="{{ asset('asset_user/js/plugin.js')}}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="{{ asset('asset_user/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+      <script src="{{ asset('asset_user/js/custom.js')}}"></script>
+      <script src="{{ asset('asset_user/https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js')}}"></script>
    </body>
 </html>
 
