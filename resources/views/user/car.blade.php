@@ -78,8 +78,20 @@
                                         <a class="nav-link" href="car">Car</a>
                                     </li>
                                 </ul>
-                                <div class="sign_btn"><a href="#">Login</a></div>
-                                <div class="sign_btn"><a href="#">Logout</a></div>
+                                @if (Auth::user())
+                                <form method="POST" class="sign_btn" action="{{ route('logout') }}">
+                                   @csrf
+               
+                                   <x-responsive-nav-link :href="route('logout')"
+                                           onclick="event.preventDefault();
+                                                       this.closest('form').submit();">
+                                       {{ __('Log Out') }}
+                                   </x-responsive-nav-link>
+                               </form>
+                                @else
+                                <div class="sign_btn"><a href="/login">Login</a></div>
+     
+                                @endif
                             </div>
                         </nav>
                     </div>
