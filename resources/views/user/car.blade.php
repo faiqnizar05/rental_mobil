@@ -68,9 +68,6 @@
                                  <a class="nav-link" href="about.html">Tentang Kami</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Contact us</a>
-                              </li>
-                              <li class="nav-item">
                                  <a class="nav-link" href="car.html">Car</a>
                               </li>
                            </ul>
