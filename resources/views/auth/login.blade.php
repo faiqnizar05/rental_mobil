@@ -37,7 +37,9 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" required class="form-control" name="password" id="exampleInputPassword1">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button> 
+                    <br>
+                    <span type="submit">Anda belum punya akun? <a href="/registrasi">Registrasi</a></span>
                 </form>
             </div>
         </div>
