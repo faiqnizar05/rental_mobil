@@ -1,48 +1,49 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Rental Mobil</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
 
-      <link rel="stylesheet" href="{{ asset('asset_user/css/bootstrap.min.css') }}">
-      <!-- style css -->
-      <link rel="stylesheet" href="{{ asset('asset_user/css/style.css') }}">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="{{ asset('asset_user/css/responsive.css') }}">
-      <!-- fevicon -->
-      <link rel="icon" href="{{ asset('asset_user/images/fevicon.png') }}" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="{{ asset('asset_user/css/jquery.mCustomScrollbar.min.css')}}">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Rental Mobil</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+
+    <link rel="stylesheet" href="{{ asset('asset_user/css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ asset('asset_user/css/style.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ asset('asset_user/css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ asset('asset_user/images/fevicon.png') }}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('asset_user/css/jquery.mCustomScrollbar.min.css')}}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="{{ asset('asset_user/images/loading.gif')}}" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{ asset('asset_user/images/loading.gif')}}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
@@ -78,58 +79,53 @@
                   </div>
                </div>
             </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
-   
-      </div>
-      <!-- end banner -->
-      <!-- car -->
-    
-      <!-- end car -->
-      <!-- bestCar -->
-    
-      <!-- end bestCar -->
-      <!-- choose  section -->
-      <div  class="car">
-        <div class="container">
-           <div class="row">
-              <div class="col-md-12">
-                 <div class="titlepage">
-                    <h2> CARS </h2>
-                    <span>Butuh mobil praktis untuk di kota? Desain stylish dan hemat bahan bakar, ideal untuk jalanan perkotaan</span>
-                 </div>
-              </div>
-           </div>
-           <div class="row">
-              <div class="col-md-4 padding_leri">
-                 <div class="car_box">
-                    <figure><img src="{{ asset('asset_user/images/car_img1.png')}}" alt="#"/></figure>
-                    <h3>Hundai</h3>
-                 </div>
-              </div>
-              <div class="col-md-4 padding_leri">
-                 <div class="car_box">
-                    <figure><img src="{{ asset('asset_user/images/car_img2.png')}}" alt="#"/></figure>
-                    <h3>Audi</h3>
-                 </div>
-              </div>
-              <div class="col-md-4 padding_leri">
-                 <div class="car_box">
-                    <figure><img src="{{ asset('asset_user/images/car_img3.png')}}" alt="#"/></figure>
-                    <h3>Bmw x5</h3>
-                 </div>
-              </div>
-           </div>
         </div>
-     </div>
-      <!-- end choose  section -->
-      <!-- cutomer -->
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
 
-      <!-- end cutomer -->
-      <footer>
+    </div>
+    <!-- end banner -->
+    <!-- car -->
+
+    <!-- end car -->
+    <!-- bestCar -->
+
+    <!-- end bestCar -->
+    <!-- choose  section -->
+    <div class="car">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2> CARS </h2>
+                        <span>Butuh mobil praktis untuk di kota? Desain stylish dan hemat bahan bakar, ideal untuk
+                            jalanan perkotaan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            @foreach ($data as $item)
+                
+                <div class="col-md-4 padding_leri mb-5">
+                    <div class="car_box">
+                        <figure><img style="height: 250px; width: 250px"  src="{{ asset('storage/image/'.$item->photo) }}" alt="#" /></figure>
+                        <h3>{{$item->name}}</h3>
+                        <a class="btn btn-danger mt-2" href="/sewa/{{$item->id}}">Sewa Sekarang</a>
+                    </div>
+                </div>
+              
+                @endforeach
+            </div>
+            
+        </div>
+    </div>
+    <!-- end choose  section -->
+    <!-- cutomer -->
+
+    <!-- end cutomer -->
+    <footer>
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -171,151 +167,182 @@
             </div>
         </div>
     </footer>
-    
+
     <style>
-    
-    .about-us {
-        padding: 60px 0;
-        background-color: #f9f9f9;
-    }
-    .titlepage {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .titlepage h2 {
-        font-size: 36px;
-        color: #343a40;
-        margin-bottom: 10px;
-    }
-    .titlepage span {
-        font-size: 16px;
-        color: #777;
-    }
-    .about-img {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .about-img img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-    .about-content {
-        padding: 20px;
-    }
-    .about-content h3 {
-        font-size: 28px;
-        color: #343a40;
-        margin-bottom: 15px;
-    }
-    .about-content p {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-    .about-content ul {
-        list-style: none;
-        padding: 0;
-    }
-    .about-content ul li {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 10px;
-        position: relative;
-        padding-left: 20px;
-    }
-    .about-content ul li:before {
-        content: "\f00c";
-        font-family: "Font Awesome 5 Free";
-        position: absolute;
-        left: 0;
-        color: #007bff;
-        font-weight: 900;
-    }
-    
-    /* Responsiveness */
-    @media (max-width: 768px) {
+        .about-us {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .titlepage {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titlepage h2 {
+            font-size: 36px;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+
+        .titlepage span {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .about-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         .about-content {
+            padding: 20px;
+        }
+
+        .about-content h3 {
+            font-size: 28px;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .about-content ul {
+            list-style: none;
             padding: 0;
         }
-        .about-img, .about-content {
-            text-align: center;
-        }
-        .about-content ul {
-            text-align: left;
-            padding-left: 0;
-        }
-        .about-content ul li {
-            padding-left: 25px;
-        }
-    }
-    .footer {
-        background-color: #003366; /* Ubah warna hitam menjadi biru tua */
-        color: #fff;
-        padding: 40px 0;
-    }
-    .footer h3 {
-        color: #ffc107;
-    }
-    .footer p, .footer a {
-        color: #dcdcdc;
-    }
-    .footer a:hover {
-        color: #ffc107;
-        text-decoration: none;
-    }
-    .social-icons {
-        list-style: none;
-        padding: 0;
-    }
-    .social-icons li {
-        display: inline;
-        margin-right: 10px;
-    }
-    .social-icons a {
-        color: #dcdcdc;
-        font-size: 18px;
-    }
-    .social-icons a:hover {
-        color: #ffc107;
-    }
-    .bottom-footer {
-        background-color: #002244; /* Ubah warna hitam menjadi warna biru tua */
-        padding: 20px 0;
-        border-top: 1px solid #444;
-    }
-    .footer-nav {
-        list-style: none;
-        padding: 0;
-        text-align: right;
-    }
-    .footer-nav li {
-        display: inline;
-        margin-left: 15px;
-    }
-    .footer-nav a {
-        color: #dcdcdc;
-    }
-    .footer-nav a:hover {
-        color: #ffc107;
-        text-decoration: none;
-    }
-    </style>
-    
-    
-     
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="{{ asset('asset_user/js/jquery.min.js')}}"></script>
-      <script src="{{ asset('asset_user/js/popper.min.js')}}"></script>
-      <script src="{{ asset('asset_user/js/bootstrap.bundle.min.js')}}"></script>
-      <script src="{{ asset('asset_user/js/jquery-3.0.0.min.js')}}"></script>
-      <script src="{{ asset('asset_user/js/plugin.js')}}"></script>
-      <!-- sidebar -->
-      <script src="{{ asset('asset_user/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-      <script src="{{ asset('asset_user/js/custom.js')}}"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   </body>
-</html>
 
+        .about-content ul li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .about-content ul li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: 900;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 0;
+            }
+
+            .about-img,
+            .about-content {
+                text-align: center;
+            }
+
+            .about-content ul {
+                text-align: left;
+                padding-left: 0;
+            }
+
+            .about-content ul li {
+                padding-left: 25px;
+            }
+        }
+
+        .footer {
+            background-color: #003366;
+            /* Ubah warna hitam menjadi biru tua */
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer h3 {
+            color: #ffc107;
+        }
+
+        .footer p,
+        .footer a {
+            color: #dcdcdc;
+        }
+
+        .footer a:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            color: #dcdcdc;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+
+        .bottom-footer {
+            background-color: #002244;
+            /* Ubah warna hitam menjadi warna biru tua */
+            padding: 20px 0;
+            border-top: 1px solid #444;
+        }
+
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+
+        .footer-nav li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        .footer-nav a {
+            color: #dcdcdc;
+        }
+
+        .footer-nav a:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+    </style>
+
+
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{{ asset('asset_user/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('asset_user/js/popper.min.js')}}"></script>
+    <script src="{{ asset('asset_user/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('asset_user/js/jquery-3.0.0.min.js')}}"></script>
+    <script src="{{ asset('asset_user/js/plugin.js')}}"></script>
+    <!-- sidebar -->
+    <script src="{{ asset('asset_user/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    <script src="{{ asset('asset_user/js/custom.js')}}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
