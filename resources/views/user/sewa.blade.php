@@ -66,7 +66,7 @@
                             <div class="collapse navbar-collapse" id="navbarsExample04">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index"> Home </a>
+                                        <a class="nav-link" href="/"> Home </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/about">Tentang Kami</a>
@@ -75,6 +75,12 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="/car">Car</a>
                                     </li>
+                                    @if (Auth::user())
+                                  
+                                    <li class="nav-item">
+                                       <a class="nav-link" href="/history-sewa">History Sewa</a>
+                                    </li>
+                                    @endif
                                 </ul>
                                 @if (Auth::user())
                                 <form method="POST" class="sign_btn" action="{{ route('logout') }}">

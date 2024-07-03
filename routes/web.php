@@ -26,6 +26,7 @@ Route::get('/car',[UserController::class,'car']);
 Route::get('/about',[UserController::class,'about']);
 Route::get('/registrasi',[UserController::class,'registrasi']);
 Route::post('/submit-registrasi',[UserController::class,'submit_registrasi']);
+Route::get('/history-sewa',[UserController::class,'history_sewa']);
 
 Route::middleware(['auth'])->group(function () {
 Route::get('/sewa/{id}',[UserController::class,'sewa']);

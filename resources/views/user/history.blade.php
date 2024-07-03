@@ -74,7 +74,7 @@
                               @if (Auth::user())
                                   
                               <li class="nav-item">
-                                 <a class="nav-link" href="/history-sewa">History Sewa</a>
+                                 <a class="nav-link" href="/car">History Sewa</a>
                               </li>
                               @endif
                            </ul>
@@ -102,60 +102,11 @@
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
-      <section class="banner_main">
-         <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-12">
-                  <div class="text-bg">
-                     <h1>Rental Mobil</h1>
-                     
-                     <span>Promosi Layanan Sopir</span>
-                     <p>
-                        Nikmati perjalanan dengan nyaman dan hemat! Diskon spesial hingga 20% untuk penyewaan mobil selama bulan ini. Pesan sekarang sebelum kehabisan!
-                        <head></head>
-                     </p>
-               
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+     
       </div>
       <!-- end banner -->
       <!-- car -->
-      <div  class="car">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2> CARS </h2>
-                     <span>Butuh mobil praktis untuk di kota? Honda Jazz kami pilihan terbaik! Desain stylish dan hemat bahan bakar, ideal untuk jalanan perkotaan</span>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4 padding_leri">
-                  <div class="car_box">
-                     <figure><img src="{{ asset('asset_user/images/car_img1.png')}}" alt="#"/></figure>
-                     <h3>Hundai</h3>
-                  </div>
-               </div>
-               <div class="col-md-4 padding_leri">
-                  <div class="car_box">
-                     <figure><img src="{{ asset('asset_user/images/car_img2.png')}}" alt="#"/></figure>
-                     <h3>Audi</h3>
-                  </div>
-               </div>
-               <div class="col-md-4 padding_leri">
-                  <div class="car_box">
-                     <figure><img src="{{ asset('asset_user/images/car_img3.png')}}" alt="#"/></figure>
-                     <h3>Bmw x5</h3>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end car -->
+   
       <!-- bestCar -->
       <div id="contact" class="bestCar">
          <div class="container">
@@ -165,170 +116,47 @@
             </div>
             <div class="row">
                <div class="col-sm-12">
-                  <div class="row">
-                     <div class="col-md-6 offset-md-6">
-                        <form class="main_form">
-                           <div class="titlepage">
-                              <h2>Find A  Best Car For Rent</h2>
-                           </div>
-                           <div class="row">
-                              <div class="col-md-12 ">
-                                 <select>
-                                    <option value="0">Choose car Make</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                 </select>
-                              </div>
-                              <div class="col-md-12">
-                                 <select>
-                                    <option value="0">Choose Car Type </option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                 </select>
-                              </div>
-                              <div class="col-md-12">
-                                 <input class="contactus" placeholder="Search" type="Search" name="Search">                          
-                              </div>
-                              <div class="col-md-12">
-                                 <select>
-                                    <option value="0">Price of Rent</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                 </select>
-                              </div>
-                              <div class="col-sm-12">
-                                 <button class="find_btn">Find Now</button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
+                  <div class="card">
+                      <div class="card-body">
+                        <h3>History Peminjaman Ku</h3>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">No</th>
+                                <th>Nama Mobil</th>
+                                <th>Tgl Pinjam</th>
+                                <th>Tgl Kembali</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($data as $item)
+                                <?php
+                                $no= 1;
+                                ?>
+                                <tr>
+                                    <th scope="row">{{$no++}}</th>
+                                    <td>{{$item->car->name}}</td>
+                                    <td>{{$item->loan_date}}</td>
+                                    <td>{{$item->return_date}}</td>
+                                    <td>Rp. {{$item->total_cost}}</td>
+                                    <td>
+                                        {{$item->status}}
+                                    </td>
+                                    
+                                </tr>
+                                @endforeach
+                             
+                            </tbody>
+                          </table>
+                    </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end bestCar -->
-      <!-- choose  section -->
-      <div class="choose ">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>MENGAPA MEMILIH KAMI</h2>
-                     <span>Kami menawarkan berbagai pilihan mobil terbaru dengan kondisi prima, siap menemani setiap perjalanan Anda.</span>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="choose_box">
-                     <span>01</span>
-                     <p>Kami selalu siap melayani Anda dengan ramah dan profesional, memastikan pengalaman rental yang memuaskan</p>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <div class="choose_box">
-                     <span>02</span>
-                     <p>Nikmati perjalanan dengan harga yang bersaing dan berbagai penawaran menarik setiap bulannya</p>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <div class="choose_box">
-                     <span>03</span>
-                     <p>Dengan sistem pemesanan yang cepat dan praktis, Anda bisa memesan mobil dalam hitungan menit.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end choose  section -->
-      <!-- cutomer -->
-      <div class="cutomer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>APA YANG DIKATAKAN PELANGGAN KAMI</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide cutomer_Carousel " data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container">
-                              <div class="carousel-caption ">
-                                 <div class="cross_img">
-                                    <figure><img src="{{ asset('asset_user/images/cross_img.png')}}" alt="#"/></figure>
-                                 </div>
-                                 <div class="our cross_layout">
-                                    <div class="test_box">
-                                       <h4>Joe</h4>
-                                       <span>Rental</span>
-                                       <p>Layanan terbaik yang pernah saya alami! Mobil dalam kondisi sangat baik dan staf sangat ramah. Pasti akan menyewa lagi di sini!</p>
-                                       <i><img src="{{ asset('asset_user/images/te1.png')}}" alt="#"/></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="cross_img">
-                                    <figure><img src="{{ asset('asset_user/images/cross_img.png')}}" alt="#"/></figure>
-                                 </div>
-                                 <div class="our cross_layout">
-                                    <div class="test_box">
-                                       <h4></h4>
-                                       <span>Heryyy</span>
-                                       <p>Layanan sopir yang disediakan sangat profesional. Sopirnya ramah dan menguasai rute dengan baik. Sangat merekomendasikan!</p>
-                                       <i><img src="{{ asset('asset_user/images/te1.png')}}" alt="#"/></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="cross_img">
-                                    <figure><img src="{{ asset('asset_user/images/cross_img.png')}}" alt="#"/></figure>
-                                 </div>
-                                 <div class="our cross_layout">
-                                    <div class="test_box">
-                                       <h4>Due arkes</h4>
-                                       <span>Rental</span>
-                                       <p>Harga yang sangat kompetitif dengan kualitas mobil yang prima. Sangat puas dan pasti akan kembali lagi</p>
-                                       <i><img src="{{ asset('asset_user/images/te1.png')}}" alt="#"/></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Previous</span>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Next</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <!-- end cutomer -->
       <!--  footer -->
       <footer>

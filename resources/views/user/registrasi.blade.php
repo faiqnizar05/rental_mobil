@@ -13,6 +13,8 @@
     <div class="container" style="display: flex; justify-content: center">
         <div class="card mt-5 w-50">
             <div class="card-body">
+                <h5>Registrasi User</h5>
+                    <hr>
                 <form action="/submit-registrasi" method="POST">
                     @csrf 
                     <div class="mb-3">

@@ -13,6 +13,8 @@
     <div class="container" style="display: flex; justify-content: center">
         <div class="card mt-5 w-50">
             <div class="card-body">
+                <h5>Login Admin</h5>
+                <hr>
                 @if (session('error'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     {{session('error')}}

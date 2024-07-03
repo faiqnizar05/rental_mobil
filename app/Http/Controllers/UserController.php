@@ -7,6 +7,7 @@ use App\Models\Car;
 use App\Models\Loan;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -62,5 +63,10 @@ class UserController extends Controller
             'role'=>'peminjam',
         ]);
         return redirect('/login');
+    }
+
+    public function history_sewa(){
+        $data = Loan::where('user_id',Auth::user()->id)->get();
+        return view('user.history',compact('data'));
     }
 }

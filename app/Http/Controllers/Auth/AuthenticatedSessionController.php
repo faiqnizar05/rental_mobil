@@ -25,11 +25,20 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate();
-
-        $request->session()->regenerate();
-
-        return redirect('/');
+        try {
+            //code...
+            if ($request->email == 'admin@gmail.com') {
+                return back()->with(['error'=>'silahkan login admin di /admin/login']);
+            }
+            $request->authenticate();
+            
+            $request->session()->regenerate();
+            
+        } catch (\Throwable $th) {
+            return back()->with(['error'=>'Email dan Password anda salah.']);
+            //throw $th;
+        }
+        return redirect('/')->with(['login'=>'Anda berhasil login.']);
     }
 
     /**

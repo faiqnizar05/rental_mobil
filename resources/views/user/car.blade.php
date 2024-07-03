@@ -72,11 +72,14 @@
                                         <a class="nav-link" href="about">Tentang Kami</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact us</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="car">Car</a>
                                     </li>
+                                    @if (Auth::user())
+                                  
+                                    <li class="nav-item">
+                                       <a class="nav-link" href="/history-sewa">History Sewa</a>
+                                    </li>
+                                    @endif
                                 </ul>
                                 @if (Auth::user())
                                 <form method="POST" class="sign_btn" action="{{ route('logout') }}">
