@@ -31,7 +31,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <br>
-                    <span type="submit">Anda sudah punya akun? <a href="/login">Login</a></span>
+                    <span type="submit">Anda sudah punya Akun? <a href="/login">Login</a></span>
                 </form>
             </div>
         </div>
